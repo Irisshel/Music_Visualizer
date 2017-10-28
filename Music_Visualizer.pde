@@ -16,6 +16,7 @@ Minim minim;
 AudioPlayer song;
 FFT fft;
 
+final String SONGNAME = "war.aiff";
 float basslimit = 0.025;  //limit value of bass RANGE: 0 - 0.03
 float midlimit = 0.07;  //limit value of mid RANGE: 0.03 - 0.1
 float treblelimit = 0.2; //limit value of treble RANGE: 0.1 - 0.3
@@ -40,7 +41,7 @@ void setup()
   //setting up
   size(displayWidth, displayHeight, P3D);
   minim = new Minim(this);
-  song = minim.loadFile("war.aiff");
+  song = minim.loadFile(SONGNAME);
   fft = new FFT(song.bufferSize(), song.sampleRate());
   
   
