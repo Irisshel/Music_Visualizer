@@ -7,3 +7,5 @@ This program combines different music visualizing algorithms.
   * Press a,s,d,f,g to turn effects off
   * Press 2,4,6,8 to navigate through space
   * Modify limit value to customize colors
+
+![alt text](https://github.com/username/spandyandy/Music_Visualizer/Screenshots/1.png)
