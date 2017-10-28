@@ -13,14 +13,14 @@ class Edge{
     //setting color of edges
     fill(color(vLow*0.3, vMid*0.3, vHi*0.3, total), (255+z/25)*total*0.0002);
     
-    //move box
+    //move box, give size
     pushMatrix();
     translate(x, y, z);
     scale(edgeWidth, edgeHeight, 10);
     box(1);
     popMatrix();
     
-    z+= total*total/5000; //add z value so it looks like the lines are coming
+    z+= total*total/10000; //add z value so it looks like the lines are coming
     
     //if too close, reset it to the farthest
     if (z >= 0)

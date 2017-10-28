@@ -27,12 +27,14 @@ class Object {
     pushMatrix();
     translate(x, y, z);
     
+    //show sphere
     if(eSphere){    
       noStroke();
       lights();
       sphere(20);
     }
-    
+   
+    //show Cube 
     else if(eCube){
       strokeWeight(1 + (total/1000));
       sumRotX += bandVal*(rotX/1000);
@@ -48,7 +50,7 @@ class Object {
     
     
     popMatrix();
-    z+= 1+bandVal*0.2+total*total/5000;
+    z+= 1+bandVal*0.2+total*total/10000;
         
     if (z >= close) {
        x = random(0, width);
